@@ -24,7 +24,7 @@
     function advanceSLR(timestamp) {
         // only move if things are running
         if (! (lasttime === undefined) && gobut.checked) {
-            const delta = (timestamp - lasttime) / 10.0;
+            const delta = (timestamp - lasttime) / 20.0;
             value = (value + delta) % 100;
             slr.value = value.toString();
         }
@@ -48,7 +48,7 @@
     function advanceSLR(timestamp) {
         if (start === undefined) start = timestamp;
         if (gobut.checked) {
-            let newValue = ((timestamp-start) % 1000) / 10.0;   // 1000ms = 100 slider units = 1 slider
+            let newValue = ((timestamp-start) % 1000) / 20.0;   // 1000ms = 100 slider units = 1 slider
             slr.value = newValue.toString();
         }
         window.requestAnimationFrame(advanceSLR);
