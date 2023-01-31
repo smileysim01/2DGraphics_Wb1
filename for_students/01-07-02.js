@@ -28,7 +28,6 @@ greenb.onclick = function(){
 }
 
 function fadeRed(timestamp){    //red = [255,0,0]
-    console.log(fade[0]+" "+fade[1]+" "+fade[2]);
     if(fade[1] >= 255 || fade[2] >= 255){
         delta = delta * -1;
     }
@@ -41,7 +40,6 @@ function fadeRed(timestamp){    //red = [255,0,0]
 }
 
 function fadeYellow(timestamp){    //yellow = [255,255,0]
-    console.log(fade[0]+" "+fade[1]+" "+fade[2]);
     if(fade[2] >= 255){
         delta = delta * -1;
     }
@@ -53,7 +51,6 @@ function fadeYellow(timestamp){    //yellow = [255,255,0]
 }
 
 function fadeGreen(timestamp){    //green = [0,255,0]
-    console.log(fade[0]+" "+fade[1]+" "+fade[2]);
     if(fade[0] >= 255 || fade[2] >= 255){
         delta = delta * -1;
     }
